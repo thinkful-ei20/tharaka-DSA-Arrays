@@ -1,11 +1,13 @@
 const urlify = function(url) {
-    const arr = url.split('');
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i] === ' ') {
-            arr[i] = '%20';
+    let result = '';
+    for(let i = 0; i < url.length; i++) {
+        if(url[i] === ' ') {
+            result += '%20';
+        } else {
+            result += url[i]
         }
     }
-    return arr.join('');
+    return result;
 }
 
 console.log(urlify('asdf  asdsaf 234 .com'));
