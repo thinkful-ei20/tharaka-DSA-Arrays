@@ -1,3 +1,6 @@
+/*O(n^2) First for loop goes through the second array and push the numbers into a new array. The second for loop goes through the first array. It's inner for loop 
+goes through the each number value.
+*/
 const mergeArray = function(arr1, arr2) {
     let newArr = arr1;
     

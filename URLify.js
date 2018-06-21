@@ -1,3 +1,4 @@
+//O(n) One for loop to go through the url string.
 const urlify = function(url) {
     let result = '';
     for(let i = 0; i < url.length; i++) {
